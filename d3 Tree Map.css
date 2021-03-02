@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* To make sure we can scroll through the svg when viewport is small we only align the svg vertically in the body with min-height (using height means body will not exceed viewport height size).
+     Then we center the svg horizontally with display: block and margin: auto in the svg class .graph */
+  min-height: 100vh;
+  background-color: white;
+}
+
+#header {
+  text-align: center;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  font-size: 40px;
+  padding: 5px;
+}
+
+#title {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+#description {
+  text-align: center;
+  margin: 0.2rem 0 0.4rem 0;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+#select {
+  display: block;
+  margin: auto;
+  width: 15%;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+}
+
+#legend-container {
+  display: block; /* Centers legend horizontally and able to scroll if screen is smaller than it*/
+  margin: auto;
+  margin-top: 1rem;
+  width: 800px;
+  height: 100px;
+}
+
+.graph {
+  display: block;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tile-text {
+  font-size: 0.7rem;
+  fill: white;
+}
+
+#tooltip {
+  position: absolute;
+  max-width: 250px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px black;
+  display: flex;
+  flex-direction: column;
+}
+
+#author {
+  text-align: center;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  padding: 5px;
+}
+
+#my-link {
+  display: block;
+  margin: auto;
+  width: 140px;
+  margin-top: 0.3rem;
+  text-decoration: none;
+  color: rgb(47, 47, 214);
+}
+
+#my-link:hover {
+  color: white;
+}

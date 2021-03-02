@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="d3 Tree Map.css" />
+    <title>d3 Tree Map</title>
+  </head>
+
+  <body>
+    <h1 id = "header">D3.js Treemap Diagram</h1>
+    <h1 id="title">Movie Sales</h1>
+    <h4 id="description">Top 100 Highest Grossing Movies Grouped By Genre</h4>
+    
+    <!-- In order for the getURL function to work we must pass the this keyword in parameter to pass event. value-->
+    <select id="select" onchange= "getURLFromSelect(this)">
+      <option value="0">Movie Sales</option>
+      <option value="1">Video Game Sales</option>
+      <option value="2">Kickstarter Pledges</option>
+    </select>
+
+    <div id="tree-map"></div>
+    <div id="legend-container"></div>
+
+    <div id="author">
+        <span>Designed and coded by: </span> <br>
+        <a id="my-link" href="#" target="_blank">Hunter Lacefield</a>
+    </div>
+  </body>
+
+  <!-- d3 Link-->
+  <script type="text/javascript" 
+    src="https://d3js.org/d3.v4.min.js">  
+  </script>  
+  
+  <!-- Javascript link-->
+	<script src = "d3 Tree Map.js"></script>
+</html>
+
+
+
